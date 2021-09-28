@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+body {
+    background-color: #441151;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header .container {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+header #logo {
+    color: #d88eeb;
+    font-family: 'Arial Black', times;
+    font-size: 35px;
+    padding:2px;
+    margin-top: -28px;
+}
+header #subtitulo {
+    color: #e0cfe4;
+    margin-left: 5px;
+}
+header #nav #btn-mobile {
+    display: none;
+}
+
+header #nav #menu {
+    display: flex;
+    border: 1px solid #dfaaee;
+    margin-right: 40px;
+    margin-top: 10px;
+    background-color: #812299;
+}
+header #nav li {
+    transition: .5s ease all;
+    padding: 10px 20px ;
+}
+header #nav li a {
+    color: white;
+}
+header #nav li:hover {
+    background-color: #dfaaee;
+}
+header #nav li a:hover {
+    color: black;
+}
+h4 {
+    font-size: 18pt;
+    margin-top: 20px;
+}
+
+.anime-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0, .50) 100%), url('../img/steinsgateBack.jpg');
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.anime-principal .descricao {
+    margin-top: 15px;
+    margin-bottom: 40px;
+}
+.anime-principal .titulo {
+    font-size: 40px;
+    margin-top: 15%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+.botao {
+    background-color: #5125c9;
+    padding: 10px 20px;
+    border: none;
+    color: rgb(234, 235, 236);
+    font-size: 12px;
+    margin-right: 15px;
+    transition: .9s ease all;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.botao:hover {
+    background-color: #beb0e7;
+    color: black;
+    
+}
+.botao i {
+    margin-right: 8px;
+}
+.carrosel-animes {
+    margin-top: 10px;
+}
+.mais-info {
+    padding: 20px;
+    padding-top: 35px;
+    text-align:justify ;
+    background-color: #2a0c7ce7;
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 1s;
+    z-index: 998;
+}
+.detalhes-mais-info {
+    color: rgb(184, 180, 180);
+}
+.trailer {
+    padding: 20px 0px;
+    padding-top: 15px;
+    text-align:justify ;
+    background-color: #2a0c7cc9;
+    width: 690px;
+    height: 417px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    animation: animate;
+    animation-duration: 1s;
+    z-index: 998;
+    margin-top: 2%;
+    
+}
+.trailer iframe {
+    position: absolute;
+    width: 690px;
+    height: 388px;
+    margin-top: 10px;
+    
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}
+.botao-close-mais-info {
+    
+    background-color: #ab93ee;
+    float: right;
+    margin-top: -35px;
+    margin-right: -20px;
+    cursor: pointer;
+}
+.botao-close-mais-info:hover {
+    background-color: #ffffff;
+}
+
+.botao-close-trailer {
+    
+    background-color: #ab93ee;
+    float: right;
+    margin-top: -15px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+.botao-close-trailer:hover {
+    background-color: #ffffff;
+}
+
+.box-anime {
+    width: 261.8px;
+    height: 392.84px;
+}

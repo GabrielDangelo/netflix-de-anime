@@ -1,0 +1,118 @@
+@media screen and (max-width: 700px){
+    .container #nav #menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        margin-right: 0;
+        margin-top: 26px;
+        background-color: #812299;
+        border: none;
+        z-index: 999;
+        height: 0;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        justify-content: center;
+    }
+    .container #logo {
+        font-size: 30px;
+    }
+    .container #nav.active #menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 30vh;
+        visibility: visible;
+    }
+    .container #nav #btn-mobile {
+        display: block;
+    }
+    .descricao {
+        width: 70%;
+        text-align: justify;
+    }
+    .botao {
+        margin-bottom: 8px;
+        width: 300px;
+    }
+    .botoes {
+        margin-bottom: 10%;
+    }
+    .box-anime {
+        width: 483px;
+        height: 600.5px;
+    }
+    .mais-info {
+        width: 300px;
+        height: 500px;
+    }
+    .trailer {
+        width: 580px;
+        height:340px;
+        margin-top: 5%;
+        
+    }
+    .trailer iframe {
+        width: 580px;
+        height:325px;
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin-right: .5rem;
+    }
+   
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #af95f8;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .trailer {
+        width: 360px;
+        height:230px;
+        margin-top: 5%;
+        
+    }
+    .trailer iframe {
+        width: 345px;
+        height:200px;
+        margin-left: 8px;
+        
+    }
+}
+@media screen and (min-width: 700px) {
+    .descricao {
+        width: 50%;
+    }
+
+}
+@media (min-width: 1000px) and (max-width: 1200px){
+    .mais-info {
+        margin-top: -270px;
+        z-index: 999;
+    }
+    .trailer {
+        margin-top: -270px;
+        z-index: 999;
+    }
+}
+

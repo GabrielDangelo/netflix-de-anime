@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Animes</title>
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#"><span id="logo">SuperAnimes</span> <br> <span id="subtitulo">Vivendo um novo mundo!!!</span></a>
+            
+            <nav id="nav">
+                <button id="btn-mobile">
+                    <span id="hamburguer"></span>
+                </button>
+                <ul id="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Fórum</a></li>
+                    <li><a href="#">Sociais</a></li>
+                </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+        <div class="anime-principal">
+            <div class="container">
+                <h3 class="titulo">Steins;Gate</h3>
+                <p class="descricao">Okabe Rintaro descobre que consegue enviar mensagens ao passado com seu celular e microondas. Quais as consequências de se alterar a linha do tempo?</p>
+                <div class="botoes">
+                    <button class="botao">
+                        <i class="fas fa-play"></i>
+                        ASSISTIR AGORA
+                    </button>
+                    <button onclick="abrirInfo()" class="botao">
+                        <i class="fas fa-info-circle"></i>
+                        MAIS INFORMAÇÕES
+                    </button>
+                    <button onclick="abrirTrailer()" class="botao">
+                        <i class="fab fa-youtube"></i>
+                        TRAILER
+                    </button>
+                </div>
+                <div class="mais-info">
+                    <button onclick="fecharInfo()" class="botao-close-mais-info">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <p class="descricao-mais-info">&nbsp Rintaro é um auto-proclamado cientista louco que acredita que uma organização internacional está conspirando para remodelar o mundo de acordo com seus próprios interesses. Ele e seu amigo Itaru inadvertidamente criam um dispositivo capaz de enviar mensagens para o passado. A descoberta e experimentação deste instrumento torna-se o catalisador de alterações fundamentais para o presente. Alheio das consequências de suas ações, Rintaro e seus amigos acabam criando modificações de proporções graves. Agora ele deve tentar encontrar uma maneira de voltar a linha do tempo para o mais próximo possível do original, para salvar os preciosos membros do laboratório.<br><br> <span class="detalhes-mais-info">Categorias:</span> Ficção Científica, Drama, Romance, Psicológico, Suspense, Thriller. <br><br><span class="detalhes-mais-info">Autor:</span> Jukki Hanada.</p>
+                </div>
+                <div class="trailer">
+                    <button onclick="fecharTrailer()" class="botao-close-trailer">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/uMYhjVwp0Fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>                
+            </div>
+        </div>
+    </main>
+    <h4>Recomendados</h4>
+    <div class="carrosel-animes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="img/onepiecePoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/dbzPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/narutoPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/jojoPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/hunterxhunterPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/shingekinokyojin.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/evangelionPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/deathparadePoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/mobpsycho100Poster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/gamersPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/kanatanoastraPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/zankyounoterrorPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/deathnotePoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/kaguyaPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/monsterPoster.jpg" alt="" class="box-anime">
+            </div>
+            <div class="item">
+                <img src="img/darlinginthefranxxPoster.jpg" alt="" class="box-anime">
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://kit.fontawesome.com/7c30b3b85f.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+    <script src="js/modals.js"></script>
+    <script src="js/menumob.js"></script>
+</body>
+</html>
